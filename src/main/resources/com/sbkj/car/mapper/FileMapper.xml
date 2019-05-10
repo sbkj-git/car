@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sbkj.car.mapper.FileMapper">
+
+    <sql id="selectFile">
+        SELECT f.id,f.`name`,f.url,f.create_time createTime,f.update_time updateTime,f.create_user_id createUserId,
+        f.update_user_id updateUserId FROM  car_file f
+    </sql>
+
+    <insert id="saveFile" parameterType="FilePo">
+        INSERT INTO car_file values(null,#{name},#{url},#{createTime},#{createTime},#{createUserId},#{updateUserId})
+    </insert>
+
+</mapper>

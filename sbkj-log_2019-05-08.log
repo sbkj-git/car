@@ -1,0 +1,368 @@
+2019-05-08 13:10:45.803 INFO  [main] c.s.c.SpringBootStart:48 - Starting SpringBootStart on LAPTOP-BOP83OD0 with PID 22704 (E:\workspace\sbkj\car\target\classes started by Zangdy in E:\workspace\sbkj\car)
+2019-05-08 13:10:45.807 INFO  [main] c.s.c.SpringBootStart:593 - No active profile set, falling back to default profiles: default
+2019-05-08 13:10:45.847 INFO  [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:10:45 CST 2019]; root of context hierarchy
+2019-05-08 13:10:45.991 INFO  [background-preinit] o.h.v.i.u.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-08 13:10:46.525 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-08 13:10:47.207 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8180 (http)
+2019-05-08 13:10:47.218 INFO  [main] o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2019-05-08 13:10:47.218 INFO  [main] o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-08 13:10:47.327 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2019-05-08 13:10:47.327 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1480 ms
+2019-05-08 13:10:48.015 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-08 13:10:48.018 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-08 13:10:48.019 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-08 13:10:48.019 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-08 13:10:48.019 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-08 13:10:48.019 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'tokenAndSignFilter' to: [/*]
+2019-05-08 13:10:48.436 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:10:45 CST 2019]; root of context hierarchy
+2019-05-08 13:10:48.484 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/fileUploadLocal]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.FileUploadController.fileUploadLocal(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-05-08 13:10:48.485 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/logOut]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.UserController.logOut(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:10:48.485 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/noauth/login]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.noauth.NoauthController.login(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:10:48.486 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-08 13:10:48.487 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:10:48.525 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:10:48.525 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:10:48.559 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:10:48.967 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2019-05-08 13:10:48.990 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:10:48.996 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Starting ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:10:49.007 INFO  [main] o.a.t.u.n.NioSelectorPool:179 - Using a shared selector for servlet write/read
+2019-05-08 13:10:49.019 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8180 (http)
+2019-05-08 13:10:49.022 INFO  [main] c.s.c.SpringBootStart:57 - Started SpringBootStart in 3.552 seconds (JVM running for 5.874)
+2019-05-08 13:10:57.977 INFO  [http-nio-8180-exec-1] o.a.t.u.h.p.Cookie:179 - A cookie header was received [custom","platform"]; lCode=zh_CN; lCode4UI=zh_CN; lId=6BEB598696F4116772AF9E03EFC7E962; Idea-50149687=f43003ad-f272-484e-a71b-70760a1e9ffd; JSESSIONID=aaaSsJoW9BlLw8crB_uQw] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-08 13:10:57.983 INFO  [http-nio-8180-exec-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-08 13:10:57.983 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-08 13:10:58.007 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-05-08 13:11:01.721 ERROR [http-nio-8180-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultHashOperations.hasKey(DefaultHashOperations.java:63)
+	at org.springframework.data.redis.core.DefaultBoundHashOperations.hasKey(DefaultBoundHashOperations.java:66)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.restrictIp(TokenAndSignFilter.java:170)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.doFilterInternal(TokenAndSignFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 46 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:888)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 49 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 56 common frames omitted
+2019-05-08 13:12:26.818 ERROR [http-nio-8180-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultHashOperations.hasKey(DefaultHashOperations.java:63)
+	at org.springframework.data.redis.core.DefaultBoundHashOperations.hasKey(DefaultBoundHashOperations.java:66)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.restrictIp(TokenAndSignFilter.java:170)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.doFilterInternal(TokenAndSignFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 46 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:888)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 49 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 56 common frames omitted
+2019-05-08 13:12:46.566 ERROR [http-nio-8180-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultHashOperations.hasKey(DefaultHashOperations.java:63)
+	at org.springframework.data.redis.core.DefaultBoundHashOperations.hasKey(DefaultBoundHashOperations.java:66)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.restrictIp(TokenAndSignFilter.java:170)
+	at com.sbkj.car.component.filter.TokenAndSignFilter.doFilterInternal(TokenAndSignFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 46 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:888)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 49 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 56 common frames omitted
+2019-05-08 13:13:55.706 INFO  [main] c.s.c.SpringBootStart:48 - Starting SpringBootStart on LAPTOP-BOP83OD0 with PID 26276 (E:\workspace\sbkj\car\target\classes started by Zangdy in E:\workspace\sbkj\car)
+2019-05-08 13:13:55.708 INFO  [main] c.s.c.SpringBootStart:593 - No active profile set, falling back to default profiles: default
+2019-05-08 13:13:55.739 INFO  [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:13:55 CST 2019]; root of context hierarchy
+2019-05-08 13:13:55.803 INFO  [background-preinit] o.h.v.i.u.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-08 13:13:56.140 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-08 13:13:56.604 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8180 (http)
+2019-05-08 13:13:56.612 INFO  [main] o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2019-05-08 13:13:56.613 INFO  [main] o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-08 13:13:56.713 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2019-05-08 13:13:56.713 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 974 ms
+2019-05-08 13:13:57.240 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-08 13:13:57.243 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-08 13:13:57.244 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-08 13:13:57.244 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-08 13:13:57.245 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-08 13:13:57.245 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'tokenAndSignFilter' to: [/*]
+2019-05-08 13:13:57.583 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:13:55 CST 2019]; root of context hierarchy
+2019-05-08 13:13:57.620 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/fileUploadLocal]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.FileUploadController.fileUploadLocal(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-05-08 13:13:57.621 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/logOut]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.UserController.logOut(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:13:57.622 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/noauth/login]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.noauth.NoauthController.login(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:13:57.623 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-08 13:13:57.623 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:13:57.648 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:13:57.648 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:13:57.678 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:13:58.029 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2019-05-08 13:13:58.039 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:13:58.045 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Starting ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:13:58.056 INFO  [main] o.a.t.u.n.NioSelectorPool:179 - Using a shared selector for servlet write/read
+2019-05-08 13:13:58.067 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8180 (http)
+2019-05-08 13:13:58.069 INFO  [main] c.s.c.SpringBootStart:57 - Started SpringBootStart in 2.591 seconds (JVM running for 3.716)
+2019-05-08 13:14:36.102 INFO  [http-nio-8180-exec-1] o.a.t.u.h.p.Cookie:179 - A cookie header was received [custom","platform"]; lCode=zh_CN; lCode4UI=zh_CN; lId=6BEB598696F4116772AF9E03EFC7E962; Idea-50149687=f43003ad-f272-484e-a71b-70760a1e9ffd; JSESSIONID=aaaSsJoW9BlLw8crB_uQw] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-08 13:14:36.107 INFO  [http-nio-8180-exec-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-08 13:14:36.107 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-08 13:14:36.131 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2019-05-08 13:18:42.599 INFO  [main] c.s.c.SpringBootStart:48 - Starting SpringBootStart on LAPTOP-BOP83OD0 with PID 22524 (E:\workspace\sbkj\car\target\classes started by Zangdy in E:\workspace\sbkj\car)
+2019-05-08 13:18:42.601 INFO  [main] c.s.c.SpringBootStart:593 - No active profile set, falling back to default profiles: default
+2019-05-08 13:18:42.631 INFO  [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59d4cd39: startup date [Wed May 08 13:18:42 CST 2019]; root of context hierarchy
+2019-05-08 13:18:42.724 INFO  [background-preinit] o.h.v.i.u.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-08 13:18:43.128 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-08 13:18:43.686 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8180 (http)
+2019-05-08 13:18:43.696 INFO  [main] o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2019-05-08 13:18:43.697 INFO  [main] o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-08 13:18:43.805 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2019-05-08 13:18:43.805 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1175 ms
+2019-05-08 13:18:44.403 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-08 13:18:44.406 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-08 13:18:44.406 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-08 13:18:44.406 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-08 13:18:44.407 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-08 13:18:44.407 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'tokenAndSignFilter' to: [/*]
+2019-05-08 13:18:44.784 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59d4cd39: startup date [Wed May 08 13:18:42 CST 2019]; root of context hierarchy
+2019-05-08 13:18:44.838 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/fileUploadLocal]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.FileUploadController.fileUploadLocal(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-05-08 13:18:44.839 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/logOut]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.UserController.logOut(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:18:44.840 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/noauth/login]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.noauth.NoauthController.login(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:18:44.842 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-08 13:18:44.843 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:18:44.876 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:18:44.877 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:18:44.930 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:18:45.686 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2019-05-08 13:18:45.697 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:18:45.704 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Starting ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:18:45.717 INFO  [main] o.a.t.u.n.NioSelectorPool:179 - Using a shared selector for servlet write/read
+2019-05-08 13:18:45.728 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8180 (http)
+2019-05-08 13:18:45.731 INFO  [main] c.s.c.SpringBootStart:57 - Started SpringBootStart in 3.387 seconds (JVM running for 5.132)
+2019-05-08 13:18:51.065 INFO  [http-nio-8180-exec-2] o.a.t.u.h.p.Cookie:179 - A cookie header was received [custom","platform"]; lCode=zh_CN; lCode4UI=zh_CN; lId=6BEB598696F4116772AF9E03EFC7E962; JSESSIONID=aaaSsJoW9BlLw8crB_uQw] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-08 13:18:51.072 INFO  [http-nio-8180-exec-2] o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-08 13:18:51.072 INFO  [http-nio-8180-exec-2] o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-08 13:18:51.096 INFO  [http-nio-8180-exec-2] o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-05-08 13:19:54.286 INFO  [main] c.s.c.SpringBootStart:48 - Starting SpringBootStart on LAPTOP-BOP83OD0 with PID 15500 (E:\workspace\sbkj\car\target\classes started by Zangdy in E:\workspace\sbkj\car)
+2019-05-08 13:19:54.288 INFO  [main] c.s.c.SpringBootStart:593 - No active profile set, falling back to default profiles: default
+2019-05-08 13:19:54.319 INFO  [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:19:54 CST 2019]; root of context hierarchy
+2019-05-08 13:19:54.383 INFO  [background-preinit] o.h.v.i.u.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2019-05-08 13:19:54.726 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-08 13:19:55.227 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8180 (http)
+2019-05-08 13:19:55.236 INFO  [main] o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2019-05-08 13:19:55.237 INFO  [main] o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-08 13:19:55.334 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2019-05-08 13:19:55.334 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1015 ms
+2019-05-08 13:19:55.876 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-08 13:19:55.879 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-08 13:19:55.879 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-08 13:19:55.879 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-08 13:19:55.879 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-08 13:19:55.879 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'tokenAndSignFilter' to: [/*]
+2019-05-08 13:19:56.224 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@379614be: startup date [Wed May 08 13:19:54 CST 2019]; root of context hierarchy
+2019-05-08 13:19:56.261 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/fileUploadLocal]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.FileUploadController.fileUploadLocal(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-05-08 13:19:56.262 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/auth/logOut]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.auth.UserController.logOut(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:19:56.262 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/noauth/login]}" onto public com.sbkj.car.model.ResponseBody com.sbkj.car.controller.noauth.NoauthController.login(com.sbkj.car.model.UserPo,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:19:56.263 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-08 13:19:56.264 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-08 13:19:56.289 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:19:56.289 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:19:56.320 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 13:19:56.678 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2019-05-08 13:19:56.690 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:19:56.697 INFO  [main] o.a.c.h.Http11NioProtocol:179 - Starting ProtocolHandler ["http-nio-8180"]
+2019-05-08 13:19:56.713 INFO  [main] o.a.t.u.n.NioSelectorPool:179 - Using a shared selector for servlet write/read
+2019-05-08 13:19:56.725 INFO  [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8180 (http)
+2019-05-08 13:19:56.729 INFO  [main] c.s.c.SpringBootStart:57 - Started SpringBootStart in 2.66 seconds (JVM running for 3.807)
+2019-05-08 13:20:03.320 INFO  [http-nio-8180-exec-1] o.a.t.u.h.p.Cookie:179 - A cookie header was received [custom","platform"]; lCode=zh_CN; lCode4UI=zh_CN; lId=6BEB598696F4116772AF9E03EFC7E962; Idea-50149687=f43003ad-f272-484e-a71b-70760a1e9ffd; JSESSIONID=aaaSsJoW9BlLw8crB_uQw] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-08 13:20:03.327 INFO  [http-nio-8180-exec-1] o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-08 13:20:03.327 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-08 13:20:03.350 INFO  [http-nio-8180-exec-1] o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms

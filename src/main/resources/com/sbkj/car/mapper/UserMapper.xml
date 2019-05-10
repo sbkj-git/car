@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sbkj.car.mapper.UserMapper">
+
+    <sql id="selectUser">
+        SELECT u.id ,u.username,u.password,u.`name`,u.create_time createTime,u.update_time updateTime  FROM  car_user u
+    </sql>
+
+    <sql id="selectRole">
+        SELECT r.id,r.`name`,r.create_time createTime,r.update_time updateTime,r.create_user_id createUserId,
+        r.update_user_id updateUserId FROM  car_role r
+    </sql>
+
+
+    <sql id="selectRights">
+        SELECT r.id,r.`name`,r.url,r.create_time createTime,r.update_time updateTime,r.create_user_id createUserId,
+        r.update_user_id updateUserId FROM  car_rights r
+    </sql>
+
+
+    <!--根据用户名查询用户表-->
+    <select id="findUserByName" parameterType="String" resultType="UserPo">
+        <include refid="selectUser"/>
+        where username = #{username};
+    </select>
+
+    <!--根据用户id查询角色表-->
+    <select id="findRoleByUserId" parameterType="Long" resultType="RolePo">
+        <include refid="selectRole"/>
+        LEFT JOIN car_user_role ur on r.id = ur.role_id where ur.user_id = #{userId};
+    </select>
+
+    <!--根据角色id查询权限表-->
+    <select id="findRightsByRoleId" parameterType="Integer" resultType="RightsPo">
+        <include refid="selectRights"/>
+        LEFT JOIN car_role_rights rr on r.id = rr.rights_id where ra.role_id = #{roleId};
+    </select>
+
+    <!--根据角色id查询权限表-->
+    <select id="verifyRightsByUsername" parameterType="map" resultType="RightsPo">
+        <include refid="selectRights"/>
+        LEFT JOIN car_role_rights rr on r.id = rr.rights_id
+        LEFT JOIN car_role re on re.id = rr.role_id
+        LEFT JOIN car_user_role ur on re.id = ur.role_id
+        LEFT JOIN car_user u on u.id = ur.user_id where u.username = #{username} and r.url=#{url};
+    </select>
+
+    <!-- 插入权限之后返回id useGeneratedKeys: true   keyProperty: 将返回值封装到指定属性上-->
+    <insert id="insertRights" parameterType="RightsPo" useGeneratedKeys="true" keyProperty="id">
+        insert into car_rights VALUES(null,#{name},#{url},#{createTime},#{updateTime},#{createUserId},#{updateUserId});
+    </insert>
+
+    <!--根据用户名查询用户表-->
+    <select id="findUserByName1" parameterType="String" resultMap="User">
+        select * from car_user
+        where username = #{username};
+    </select>
+
+    <resultMap id="User" type="UserPo">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="name" property="name"></result>
+        <result column="password" property="password"></result>
+        <result column="status" property="status"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+    </resultMap>
+</mapper>

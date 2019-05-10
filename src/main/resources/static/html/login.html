@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+</head>
+<body>
+<div id="app">
+    用户名:&nbsp;<input type="text" style="width: 200px" name="username" v-model="user.username"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    密  码:&nbsp;<input type="password" style="width: 200px" name="password" v-model="user.password"/>
+    <!--<input type="submit" name="submit" value="登录"/>-->
+    <button class="login" style="width: 50px;height: 30px;" @click="login()">登录</button>
+</div>
+
+<script type="text/javascript" src="../js/common/jquery.1.11.1.js"></script>
+<script src="https://cdn.bootcss.com/js-sha1/0.6.0/sha1.min.js"></script>
+<script type="text/javascript" src="../js/common/vuejs-2.5.16.js"></script>
+<script type="text/javascript" src="../js/common/axios-0.18.0.js"></script>
+<script type="text/javascript" src="../js/common/getSign.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+    });
+
+   //  $(".login").click(function () {
+   //      var username = $("input[name='username']").val();
+   //      var password = $("input[name='password']").val();
+   //
+   // var signs =  getSign("username="+username+"&password="+password);
+   // var signParams = "?appKey="+signs.appKey+"&timeStamp="+signs.timeStamp+"&sign="+signs.sign;
+   //      $.ajax(
+   //          {
+   //              url: "/noauth/login"+signParams,
+   //              type: 'post',
+   //              data: {
+   //                  username: username,
+   //                  password: password
+   //              },
+   //              async: false,
+   //              dataType: "json",
+   //              success: function (data) {
+   //                  if (data.status == "0201") {
+   //                      location.href = "/html/index.html";
+   //                  }else {
+   //                      alert(data.message)
+   //                  }
+   //              }
+   //          })
+   //  })
+</script>
+</body>
+</html>
